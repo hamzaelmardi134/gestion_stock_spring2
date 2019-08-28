@@ -153,7 +153,13 @@
 			<artifactId>hibernate-jpa-2.0-api</artifactId>
 			<version>1.0.1.Final</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/javax.el/el-api -->
+<dependency>
+    <groupId>javax.el</groupId>
+    <artifactId>el-api</artifactId>
+    <version>1.1</version>
+</dependency>
+		
 	</dependencies>
     <build>
         <plugins>

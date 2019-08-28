@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+			
+			
+				<bean id="articleDao" class="com.hamza.stock.dao.impl.ArticleDaoImpl" />
+				<bean id="articleService" class="com.hamza.stock.services.impl.ArticleServiceImpl">
+					<property name="dao" ref="articleDao"></property>
+				</bean>
+				
+				
+				<bean id="categorieDao" class="com.hamza.stock.dao.impl.CategorieDaoImpl" />
+				<bean id="categorieService" class="com.hamza.stock.services.impl.CategorieServiceImpl">
+					<property name="dao" ref="categorieDao"></property>
+				</bean>
+				
+				
+				<bean id="clientDao" class="com.hamza.stock.dao.impl.ClientDaoImpl" />
+				<bean id="clientService" class="com.hamza.stock.services.impl.ClientServiceImpl">
+					<property name="dao" ref="clientDao"></property>
+				</bean>
+				
+				
+				<bean id="commandeClientDao" class="com.hamza.stock.dao.impl.CommandeClientDaoImpl" />
+				<bean id="commandeClientService" class="com.hamza.stock.services.impl.CommandeClientServiceImpl">
+					<property name="dao" ref="commandeClientDao"></property>
+				</bean>
+				
+				
+				<bean id="ligneCommandeClientDao" class="com.hamza.stock.dao.impl.LigneCommandeClientDaoImpl" />
+				<bean id="ligneCommandeClientService" class="com.hamza.stock.services.impl.LigneCommandeClientServiceImpl">
+					<property name="dao" ref="ligneCommandeClientDao"></property>
+				</bean>
+				
+				
+				<bean id="fournisseurDao" class="com.hamza.stock.dao.impl.FournisseurDaoImpl" />
+				<bean id="fournisseurService" class="com.hamza.stock.services.impl.FournisseurServiceImpl">
+					<property name="dao" ref="fournisseurDao"></property>
+				</bean>
+				
+				
+				<bean id="commandeFournisseurDao" class="com.hamza.stock.dao.impl.CommandeFournisseurDaoImpl" />
+				<bean id="commandeFournisseurService" class="com.hamza.stock.services.impl.CommandeFournisseurServiceImpl">
+					<property name="dao" ref="commandeFournisseurDao"></property>
+				</bean>
+				
+				
+				<bean id="ligneCommandeFournisseurDao" class="com.hamza.stock.dao.impl.LigneCommandeFournisseurDaoImpl" />
+				<bean id="ligneCommandeFournisseurService" class="com.hamza.stock.services.impl.LigneCommandeFournisseurServiceImpl">
+					<property name="dao" ref="ligneCommandeFournisseurDao"></property>
+				</bean>
+				
+				
+				<bean id="venteDao" class="com.hamza.stock.dao.impl.VenteDaoImpl" />
+				<bean id="venteService" class="com.hamza.stock.services.impl.VenteServiceImpl">
+					<property name="dao" ref="venteDao"></property>
+				</bean>
+				
+				
+				<bean id="ligneVenteDao" class="com.hamza.stock.dao.impl.LigneVenteDaoImpl" />
+				<bean id="ligneVenteService" class="com.hamza.stock.services.impl.LigneVenteServiceImpl">
+					<property name="dao" ref="ligneVenteDao"></property>
+				</bean>
+				
+				
+				<bean id="utilisateurDao" class="com.hamza.stock.dao.impl.UtilisateurDaoImpl" />
+				<bean id="utilisateurService" class="com.hamza.stock.services.impl.UtilisateurServiceImpl">
+					<property name="dao" ref="utilisateurDao"></property>
+				</bean>
+			
+</beans>
