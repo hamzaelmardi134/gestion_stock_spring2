@@ -68,5 +68,11 @@
 				<bean id="utilisateurService" class="com.hamza.stock.services.impl.UtilisateurServiceImpl">
 					<property name="dao" ref="utilisateurDao"></property>
 				</bean>
+				
+				<bean id="flickrDao" class="com.hamza.stock.dao.impl.FlickrDaoImpl" />
+				<bean id="flickrService" class="com.hamza.stock.services.impl.FlickrServiceImpl">
+					<property name="dao" ref="flickrDao"></property>
+				</bean>
+				
 			
 </beans>
